@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: antiquewhite;
+    align-items: center;
+    color: rgb(77, 56, 28);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a{
+    color: rgb(77, 56, 28);
+    text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav a:hover{
+    color: rgb(203, 131, 37);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-link{
+    color: rgb(77, 56, 28);
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link:hover{
+    color: rgb(203, 131, 37);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-primary {
+    --bs-btn-color: rgb(77, 56, 28);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: rgb(203, 131, 37);
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: antiquewhite;
+    --bs-btn-active-bg: rgb(77, 56, 28);
+    --bs-btn-active-border-color: none;
+}
+
+.btn-primary:hover{
+    background-color: none;
+}
+
+.bg-danger{
+    background-color: rgb(203, 131, 37)!important;
+}
+
+.msg{
+    margin-top: 3em;
+    text-align: center;
 }
