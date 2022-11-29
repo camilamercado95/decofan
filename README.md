@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 # DecoFan
 
 ![Project's Screenshot](https://firebasestorage.googleapis.com/v0/b/decofan-react.appspot.com/o/page.JPG?alt=media&token=fc4c5507-ba09-4dab-a9a4-26fbc1cd32e1)
