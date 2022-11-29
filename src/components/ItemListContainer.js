@@ -1,37 +1,29 @@
 import { useEffect } from "react";
-import { useState } from "react"
-import { customFetch } from "../utils/customFetch";
-import { data } from "../utils/data";
+import { useState } from "react";
 import ItemList from "./ItemList";
-import ItemCount from "./ItemCount";
 import { useParams } from "react-router-dom";
+import { collection, getDocs, getFirestore, query, where} from "firebase/firestore";
 
 const ItemListContainer = (props) => {
+  const [datos, setDatos] = useState([]);
+  const { idCategory } = useParams();
 
-  const[datos,setDatos]=useState([]);
-  const {idCategory}=useParams();
-        
-    useEffect(()=>{
-      if(idCategory===undefined){
-        customFetch(2000,data)
-        .then((response)=>setDatos(response))
-        .catch((err)=>console.log(err));
-
+  useEffect(() => {
+    const querydb=getFirestore();
+    const queryCollection=collection(querydb,"productos");
+    if(idCategory){
+      const queryFilter = query(queryCollection, where("categoryId","==", idCategory))
+      getDocs(queryFilter)
+      .then(res=>setDatos(res.docs.map(producto => ({ id: producto.id, ...producto.data() }) ) ))
       }else{
-        customFetch(2000,data.filter(item=>item.categoryId===idCategory))
-        .then((response)=>setDatos(response))
-        .catch((err)=>console.log(err));
+        getDocs(queryCollection)
+        .then(res=>setDatos(res.docs.map(producto => ({ id: producto.id, ...producto.data() }) ) ))
       }
-    },[idCategory]);
-
-  const onAdd=(quantity)=>{
-    alert("Seleccionaste " + quantity + " items.");
-  }
+  }, [idCategory]);
 
   return (
     <>
-      <div className="msg">{props.text}</div>
-      <ItemList items={datos}/>
+      <ItemList items={datos} />
     </>
   );
 };

@@ -28,4 +28,8 @@ Eres libre de analizar y usar este proyecto para tu uso personal. ¡Siempre y cu
 * Da las gracias públicamente 🤓.
 
 ---
+<<<<<<< HEAD
 ⌨️ con ❤️ por [camilamercado95](https://github.com/camilamercado95) 😊
+=======
+⌨️ con ❤️ por [camilamercado95](https://github.com/camilamercado95) 😊
+>>>>>>> 5ba17fc (Entrega final)
