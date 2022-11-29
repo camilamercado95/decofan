@@ -12,7 +12,7 @@ Si deseas tener este proyecto en tu computadora para hacer pruebas, podés desca
 
 * HTML
 * CSS
-* Js
+* React Js
 
 ## Autora ✒️
 
