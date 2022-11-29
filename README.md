@@ -8,10 +8,6 @@ Este proyecto es una SPA (aplicación de una sola página) de un ecommerce de ve
 
 Si deseas tener este proyecto en tu computadora para hacer pruebas, podés descargarlo en archivo ZIP.
 
-### Pre-requisitos 📋
-
-No hace falta que instales nada, ¡solo abri el archivo en el navegador que desees!
-
 ## Construido con 🛠️
 
 * HTML
