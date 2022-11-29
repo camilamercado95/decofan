@@ -1,5 +1,7 @@
 # DecoFan
 
+![Project's Screenshot](https://firebasestorage.googleapis.com/v0/b/decofan-react.appspot.com/o/page.JPG?alt=media&token=fc4c5507-ba09-4dab-a9a4-26fbc1cd32e1)
+
 Este proyecto es una SPA (aplicación de una sola página) de un ecommerce de venta de artículos de decoración para el hogar. Creado con React Js.
 
 ## Comenzando 🚀
