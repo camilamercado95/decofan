@@ -31,7 +31,7 @@ const ItemDetail = ({ item }) => {
           </p>
           
           {item.stock > 0 ? (
-            <p className="card-text">Stock : {item.stock}</p>
+            <p className="card-text">Stock: {item.stock}</p>
           ) : (
             <p className="card-text-sinStock">SIN STOCK</p>
           )}

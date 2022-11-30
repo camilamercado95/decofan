@@ -1,0 +1,120 @@
+.carrito-flex{
+    display: flex;
+    padding:3em;
+}
+
+.div-cart{
+    width: 100%;
+}
+
+.card-totales{
+    text-align: center;
+    width: 100%;
+}
+
+.card-cart{
+    max-width: 540px;
+}
+
+.card-cart-texto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.card-cart-eliminar{
+    border: none;
+    background-color: transparent;
+    width: 30%;
+    height: 100%;
+}
+
+.card-cart-eliminar i{
+    color: rgb(203, 131, 37);
+    font-size: 1.2em;
+    transition: .5s;
+}
+
+.card-cart-eliminar i:hover{
+    color:rgb(77, 56, 28);
+}
+
+.card-cart-texto-body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.img-card-cart{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.div-img-card-cart{
+    height: 100%;
+}
+
+.h1-carrito{
+    margin: 1em;
+    text-align: center;
+}
+
+.link-terminar-seguir, .btn-cart{
+    color:rgb(77, 56, 28);
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: antiquewhite;
+    padding: .5em;
+    margin: 1em;
+    border: none;
+    transition: .5s;
+    text-align: center;
+}
+
+.div-botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link-terminar-seguir:hover{
+    background-color: rgb(247, 219, 183);
+    color:rgb(77, 56, 28);
+}
+
+.btn-cart{
+    background-color: rgb(77, 56, 28);
+    color: antiquewhite;
+    transition: .5s;
+}
+
+.btn-cart:hover{
+    background-color: rgb(107, 78, 39);
+}
+
+.p-total-carrito{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(77, 56, 28);
+}
+
+
+@media screen and (min-width: 320px) {
+
+    .carrito-flex{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .carrito-flex{
+        flex-direction: row;
+    }
+
+}

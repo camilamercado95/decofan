@@ -1,4 +1,6 @@
 import "./App.css";
+import "./NavFooter.css";
+import "./Carrito.css";
 import NavBar from "./components/NavBar";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer"
